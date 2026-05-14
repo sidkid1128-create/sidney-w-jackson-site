@@ -1,266 +1,142 @@
-export default function Curb2CurbWilliamsburg() {
-  return (
-    <div className="min-h-screen bg-zinc-950 text-white">
-      {/* HERO */}
-      <section className="relative overflow-hidden border-b border-zinc-800">
-        <div className="absolute inset-0 bg-gradient-to-br from-orange-500/20 via-transparent to-blue-500/10" />
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CURB 2 CURB Williamsburg</title>
 
-        <div className="relative max-w-7xl mx-auto px-6 py-24 lg:py-32 grid lg:grid-cols-2 gap-14 items-center">
-          <div>
-            <div className="inline-flex items-center rounded-full border border-orange-400/40 bg-orange-500/10 px-4 py-2 text-sm text-orange-300 mb-6">
-              Williamsburg • Brooklyn Local Delivery
-            </div>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #111;
+      color: white;
+    }
 
-            <h1 className="text-5xl lg:text-7xl font-black leading-tight tracking-tight">
-              CURB 2 CURB
-            </h1>
+    .hero {
+      padding: 80px 20px;
+      text-align: center;
+      background: linear-gradient(135deg,#ff7b00,#ff4d00);
+    }
 
-            <p className="text-xl lg:text-2xl text-orange-300 mt-3 font-semibold">
-              Ready on the Curb. Delivered Around the Burgh.
-            </p>
+    h1 {
+      font-size: 64px;
+      margin-bottom: 10px;
+    }
 
-            <p className="mt-8 text-lg text-zinc-300 leading-relaxed max-w-xl">
-              Fast local delivery service for furniture, boxes, electronics,
-              apartment moves, Facebook Marketplace pickups, and personal
-              belongings across Williamsburg and Brooklyn.
-            </p>
+    h2 {
+      font-size: 28px;
+      margin-top: 0;
+    }
 
-            <div className="mt-10 flex flex-wrap gap-4">
-              <button className="bg-orange-500 hover:bg-orange-400 transition px-8 py-4 rounded-2xl font-bold text-lg shadow-2xl shadow-orange-500/20">
-                Schedule Pickup
-              </button>
+    .section {
+      padding: 60px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
 
-              <button className="border border-zinc-700 hover:border-white transition px-8 py-4 rounded-2xl font-bold text-lg">
-                Get Pricing
-              </button>
-            </div>
+    .card {
+      background: #1d1d1d;
+      padding: 25px;
+      border-radius: 16px;
+      margin-bottom: 20px;
+    }
 
-            <div className="mt-10 grid grid-cols-3 gap-4 max-w-lg">
-              <div className="bg-zinc-900 border border-zinc-800 rounded-2xl p-4">
-                <div className="text-3xl font-black text-orange-400">10</div>
-                <div className="text-sm text-zinc-400 mt-1">Minutes Load Time Included</div>
-              </div>
+    .button {
+      display: inline-block;
+      background: white;
+      color: black;
+      padding: 14px 28px;
+      border-radius: 12px;
+      text-decoration: none;
+      font-weight: bold;
+      margin-top: 20px;
+    }
 
-              <div className="bg-zinc-900 border border-zinc-800 rounded-2xl p-4">
-                <div className="text-3xl font-black text-orange-400">10</div>
-                <div className="text-sm text-zinc-400 mt-1">Minutes Unload Included</div>
-              </div>
+    .pricing {
+      font-size: 24px;
+      font-weight: bold;
+      color: orange;
+    }
 
-              <div className="bg-zinc-900 border border-zinc-800 rounded-2xl p-4">
-                <div className="text-3xl font-black text-orange-400">$30</div>
-                <div className="text-sm text-zinc-400 mt-1">Every Extra 15 Minutes</div>
-              </div>
-            </div>
-          </div>
+    footer {
+      text-align: center;
+      padding: 40px 20px;
+      background: black;
+      color: #aaa;
+    }
+  </style>
+</head>
 
-          <div className="relative">
-            <div className="bg-zinc-900 border border-zinc-800 rounded-[32px] p-8 shadow-2xl">
-              <div className="bg-gradient-to-br from-orange-500 to-orange-700 rounded-3xl p-10 min-h-[500px] flex flex-col justify-between">
-                <div>
-                  <div className="text-sm uppercase tracking-[0.3em] text-orange-100">
-                    Brooklyn Delivery Service
-                  </div>
+<body>
 
-                  <h2 className="text-4xl font-black mt-6 leading-tight">
-                    Fast. Local. Reliable.
-                  </h2>
-                </div>
+  <div class="hero">
+    <h1>CURB 2 CURB</h1>
 
-                <div className="space-y-4 text-lg font-semibold">
-                  <div className="bg-black/20 rounded-2xl p-4">
-                    • Apartment Moves
-                  </div>
+    <h2>
+      Ready on the Curb. Delivered Around the Burgh.
+    </h2>
 
-                  <div className="bg-black/20 rounded-2xl p-4">
-                    • Facebook Marketplace Pickups
-                  </div>
+    <p>
+      Williamsburg & Brooklyn Local Delivery Service
+    </p>
 
-                  <div className="bg-black/20 rounded-2xl p-4">
-                    • Furniture & Box Delivery
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+    <a class="button" href="#">
+      Schedule Pickup
+    </a>
+  </div>
 
-      {/* HOW IT WORKS */}
-      <section className="max-w-7xl mx-auto px-6 py-24">
-        <div className="text-center max-w-3xl mx-auto">
-          <p className="text-orange-400 font-bold uppercase tracking-[0.3em] text-sm">
-            How It Works
-          </p>
+  <div class="section">
 
-          <h2 className="text-4xl lg:text-5xl font-black mt-4">
-            Simple Curbside Delivery
-          </h2>
+    <div class="card">
+      <h2>Fast Local Delivery</h2>
 
-          <p className="text-zinc-400 mt-6 text-lg leading-relaxed">
-            We keep it simple so pickups and deliveries move quickly across Brooklyn.
-          </p>
-        </div>
-
-        <div className="grid md:grid-cols-3 gap-8 mt-16">
-          {[
-            {
-              title: 'Schedule Pickup',
-              text: 'Book your pickup time online or by phone.'
-            },
-            {
-              title: 'Be Ready on the Curb',
-              text: 'Items must be curbside and ready for loading when we arrive.'
-            },
-            {
-              title: 'Delivered Around the Burgh',
-              text: 'Someone must be available at the drop-off location to unload.'
-            }
-          ].map((item, index) => (
-            <div
-              key={index}
-              className="bg-zinc-900 border border-zinc-800 rounded-3xl p-8 hover:border-orange-500/40 transition"
-            >
-              <div className="w-14 h-14 rounded-2xl bg-orange-500 text-black flex items-center justify-center text-2xl font-black mb-6">
-                {index + 1}
-              </div>
-
-              <h3 className="text-2xl font-bold">{item.title}</h3>
-
-              <p className="text-zinc-400 mt-4 leading-relaxed">
-                {item.text}
-              </p>
-            </div>
-          ))}
-        </div>
-      </section>
-
-      {/* PRICING */}
-      <section className="bg-zinc-900 border-y border-zinc-800">
-        <div className="max-w-7xl mx-auto px-6 py-24">
-          <div className="text-center">
-            <p className="text-orange-400 font-bold uppercase tracking-[0.3em] text-sm">
-              Pricing
-            </p>
-
-            <h2 className="text-4xl lg:text-5xl font-black mt-4">
-              Straightforward Rates
-            </h2>
-          </div>
-
-          <div className="grid lg:grid-cols-2 gap-8 mt-16">
-            <div className="bg-zinc-950 border border-zinc-800 rounded-3xl p-10">
-              <h3 className="text-3xl font-black">Standard Delivery</h3>
-
-              <div className="mt-8 text-6xl font-black text-orange-400">
-                $99+
-              </div>
-
-              <ul className="mt-8 space-y-4 text-zinc-300 text-lg">
-                <li>✓ Local Brooklyn Delivery</li>
-                <li>✓ 10 Minutes Loading Included</li>
-                <li>✓ 10 Minutes Unloading Included</li>
-                <li>✓ Flexible Pickup Windows</li>
-              </ul>
-            </div>
-
-            <div className="bg-gradient-to-br from-orange-500 to-orange-700 rounded-3xl p-10 text-black">
-              <h3 className="text-3xl font-black">Extra Time Policy</h3>
-
-              <div className="mt-8 text-6xl font-black">
-                $30
-              </div>
-
-              <p className="text-xl font-semibold mt-2">
-                Every Additional 15 Minutes
-              </p>
-
-              <div className="mt-10 space-y-4 text-lg font-semibold">
-                <div className="bg-white/20 rounded-2xl p-4">
-                  Loading delays
-                </div>
-
-                <div className="bg-white/20 rounded-2xl p-4">
-                  Stair carry delays
-                </div>
-
-                <div className="bg-white/20 rounded-2xl p-4">
-                  Waiting for customer arrival
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* CONTACT */}
-      <section className="max-w-7xl mx-auto px-6 py-24">
-        <div className="grid lg:grid-cols-2 gap-16 items-center">
-          <div>
-            <p className="text-orange-400 font-bold uppercase tracking-[0.3em] text-sm">
-              Book a Delivery
-            </p>
-
-            <h2 className="text-4xl lg:text-5xl font-black mt-4 leading-tight">
-              Schedule Your Pickup Today
-            </h2>
-
-            <p className="text-zinc-400 mt-6 text-lg leading-relaxed max-w-xl">
-              Need something moved across Williamsburg or Brooklyn? Contact us to schedule your curbside delivery.
-            </p>
-          </div>
-
-          <div className="bg-zinc-900 border border-zinc-800 rounded-3xl p-8">
-            <div className="space-y-5">
-              <input
-                className="w-full bg-zinc-950 border border-zinc-800 rounded-2xl px-5 py-4 text-white"
-                placeholder="Full Name"
-              />
-
-              <input
-                className="w-full bg-zinc-950 border border-zinc-800 rounded-2xl px-5 py-4 text-white"
-                placeholder="Phone Number"
-              />
-
-              <input
-                className="w-full bg-zinc-950 border border-zinc-800 rounded-2xl px-5 py-4 text-white"
-                placeholder="Pickup Address"
-              />
-
-              <input
-                className="w-full bg-zinc-950 border border-zinc-800 rounded-2xl px-5 py-4 text-white"
-                placeholder="Dropoff Address"
-              />
-
-              <textarea
-                rows="5"
-                className="w-full bg-zinc-950 border border-zinc-800 rounded-2xl px-5 py-4 text-white"
-                placeholder="Describe the items being delivered"
-              />
-
-              <button className="w-full bg-orange-500 hover:bg-orange-400 transition text-black font-black text-lg py-4 rounded-2xl">
-                Request Delivery
-              </button>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* FOOTER */}
-      <footer className="border-t border-zinc-800 py-10 px-6">
-        <div className="max-w-7xl mx-auto flex flex-col lg:flex-row justify-between gap-6 items-center">
-          <div>
-            <div className="text-2xl font-black">CURB 2 CURB</div>
-            <div className="text-zinc-500 mt-2">
-              Williamsburg • Brooklyn Delivery Service
-            </div>
-          </div>
-
-          <div className="text-zinc-500 text-center lg:text-right">
-            <div>curb2curbnwilliamsburg@gmail.com</div>
-            <div className="mt-2">Ready on the Curb. Delivered Around the Burgh.</div>
-          </div>
-        </div>
-      </footer>
+      <p>
+        Furniture, Facebook Marketplace pickups,
+        apartment moves, boxes, electronics,
+        and personal belongings delivered across Brooklyn.
+      </p>
     </div>
-  )
-}
+
+    <div class="card">
+      <h2>Pricing</h2>
+
+      <p class="pricing">
+        10 Minutes Load Included
+      </p>
+
+      <p class="pricing">
+        10 Minutes Unload Included
+      </p>
+
+      <p class="pricing">
+        $30 Every Extra 15 Minutes
+      </p>
+    </div>
+
+    <div class="card">
+      <h2>Rules</h2>
+
+      <ul>
+        <li>Items must be curbside and ready.</li>
+        <li>Customer must be present at dropoff.</li>
+        <li>Extra wait time billed every 15 minutes.</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>Contact</h2>
+
+      <p>
+        curb2curbnwilliamsburg@gmail.com
+      </p>
+    </div>
+
+  </div>
+
+  <footer>
+    CURB 2 CURB Williamsburg © 2026
+  </footer>
+
+</body>
+</html>
