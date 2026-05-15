@@ -2,140 +2,402 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>CURB 2 CURB Williamsburg</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tax Deed Philosopher</title>
+  <style>.book-section {
+  padding: 60px 20px;
+}
 
-  <style>
+.book-card {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 30px;
+  background: #111;
+  border-radius: 16px;
+  padding: 30px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+}
+
+.book-image img {
+  width: 240px;
+  max-width: 100%;
+  border-radius: 12px;
+}
+
+.book-content {
+  flex: 1;
+  min-width: 260px;
+  color: #fff;
+}
+
+.book-content h2 {
+  margin-bottom: 15px;
+  font-size: 28px;
+}
+
+.book-content p {
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+    * {
+      box-sizing: border-box;
+    }
+
     body {
       margin: 0;
       font-family: Arial, sans-serif;
-      background: #111;
-      color: white;
+      background: #0f1115;
+      color: #f5f5f5;
+      line-height: 1.6;
     }
 
-    .hero {
-      padding: 80px 20px;
+    a {
+      text-decoration: none;
+    }
+
+    .hero {padding: 100px 20px;}  
+      { background: linear-gradient(135deg, #111827, #1f2937, #0f1115);
+      padding: 90px 20px 70px;
       text-align: center;
-      background: linear-gradient(135deg,#ff7b00,#ff4d00);
     }
 
+    .hero-inner {
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    .badge {
+      display: inline-block;
+      background: rgba(255, 165, 0, 0.12);
+      color: #ffb347;
+      border: 1px solid rgba(255, 165, 0, 0.35);
+      padding: 8px 14px;
+      border-radius: 999px;
+      font-size: 14px;
+      margin-bottom: 20px;
+    }
+     .brand-tag {
+  display: inline-block;
+  background: rgba(255, 165, 0, 0.12);
+  color: #ffb347;
+  border: 1px solid rgba(255, 165, 0, 0.35);
+  padding: 8px 14px;
+  border-radius: 999px;
+  font-size: 14px;
+  margin-bottom: 20px;
+} 
     h1 {
-      font-size: 64px;
-      margin-bottom: 10px;
+      font-size: 48px;
+      margin: 0 0 16px;
+      line-height: 1.15;
     }
 
-    h2 {
-      font-size: 28px;
-      margin-top: 0;
+    .hero p {
+      font-size: 20px;
+      max-width: 720px;
+      margin: 0 auto 30px;
+      color: #d1d5db;
+    }
+
+    .btn-row {
+      display: flex;
+      gap: 14px;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-top: 10px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 15px 28px;
+      border-radius: 10px;
+      font-size: 17px;
+      font-weight: bold;
+      transition: 0.2s ease;
+    }
+
+    .btn-primary {
+      background: orange;
+      color: #111;
+    }
+
+    .btn-primary:hover {
+      opacity: 0.92;
+    }
+
+    .btn-secondary {
+      border: 1px solid #4b5563;
+      color: #f5f5f5;
+      background: transparent;
+    }
+
+    .btn-secondary:hover {
+      background: rgba(255,255,255,0.06);
     }
 
     .section {
-      padding: 60px 20px;
-      max-width: 1000px;
-      margin: auto;
+      padding: 70px 20px;
+    }
+
+    .section-dark {
+      background: #151922;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+
+    .section h2 {
+      text-align: center;
+      font-size: 34px;
+      margin-bottom: 18px;
+    }
+
+    .section-intro {
+      text-align: center;
+      max-width: 760px;
+      margin: 0 auto 40px;
+      color: #cbd5e1;
+      font-size: 18px;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 22px;
+      margin-top: 30px;
     }
 
     .card {
-      background: #1d1d1d;
-      padding: 25px;
-      border-radius: 16px;
-      margin-bottom: 20px;
+      background: #1b2230;
+      border: 1px solid #2b3547;
+      border-radius: 18px;
+      padding: 24px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.18);
     }
 
-    .button {
-      display: inline-block;
-      background: white;
-      color: black;
-      padding: 14px 28px;
-      border-radius: 12px;
-      text-decoration: none;
-      font-weight: bold;
-      margin-top: 20px;
+    .card h3 {
+      margin-top: 0;
+      margin-bottom: 12px;
+      font-size: 22px;
+      color: #ffb347;
     }
 
-    .pricing {
-      font-size: 24px;
-      font-weight: bold;
-      color: orange;
+    .card p {
+      margin: 0;
+      color: #d1d5db;
+      font-size: 16px;
     }
 
-    footer {
+    .about-box {
+      max-width: 850px;
+      margin: 0 auto;
+      background: #1b2230;
+      border: 1px solid #2b3547;
+      border-radius: 18px;
+      padding: 34px;
       text-align: center;
-      padding: 40px 20px;
-      background: black;
-      color: #aaa;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.18);
     }
+
+    .about-box p {
+      color: #d1d5db;
+      font-size: 18px;
+      margin: 0;
+    }
+
+    .cta {
+      text-align: center;
+      background: linear-gradient(135deg, #1a1f2b, #111827);
+      border-top: 1px solid #2b3547;
+      border-bottom: 1px solid #2b3547;
+    }
+
+    .cta p {
+      max-width: 700px;
+      margin: 0 auto 24px;
+      color: #d1d5db;
+      font-size: 18px;
+    }
+
+    .footer {
+      padding: 28px 20px;
+      text-align: center;
+      color: #9ca3af;
+      font-size: 14px;
+      background: #0b0d12;
+    }
+
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 36px;
+      }
+
+      .hero p,
+      .section-intro,
+      .cta p,
+      .about-box p {
+        font-size: 17px;
+      }
+
+      .section h2 {
+        font-size: 28px;
+      }
+    }.class-section {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.class-card {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 25px;
+  background: #111;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+  color: white;
+}
   </style>
 </head>
-
 <body>
 
-  <div class="hero">
-    <h1>CURB 2 CURB</h1>
+  <section class="hero">
+    <div class="hero-inner">
+   <p class="brand-tag">Sidney W. Jackson III | Tax Deed Philosopher</p>
+<h1>Learn Tax Deed Investing the Smart Way</h1>
+<p>Learn how to research, bid, and profit from tax deed properties with a clearer strategy and fewer costly mistakes.</p>   
 
-    <h2>
-      Ready on the Curb. Delivered Around the Burgh.
-    </h2>
+      <div class="btn-row">
+        <a class="btn btn-primary" href="https://docs.google.com/forms/d/e/1FAIpQLSeQruXQo-Qz2nUfH_nmRvkkubH5UgVVzE0WAuGW8QxWVIkv4A/viewform?usp=header" target="_blank">
+  Schedule a Tax Deed course coming in July 2026
+</a>
+        <a class="btn btn-secondary" href="https://a.co/d/08cNcsJ6" target="_blank">
+  Tax Deed Bible
+</a>
+<section class="book-section">
+  <div class="book-card">
+    
+    <div class="book-image">
+      <img src="https://raw.githubusercontent.com/sidkid1128-create/sidney-w-jackson-site/refs/heads/main/images/tax-deed-bible.jpg" alt="Tax Deed Bible cover">
+    </div>
 
-    <p>
-      Williamsburg & Brooklyn Local Delivery Service
-    </p>
+    <div class="book-content">
+      <h2>Tax Deed Bible</h2>
+      <p>
+        The ultimate guide to understanding tax deed investing, avoiding costly mistakes,
+        and building a winning strategy at auction.
+      </p>
 
-    <a class="button" href="#">
-      Schedule Pickup
+      <a class="btn btn-secondary" href="https://a.co/d/08cNcsJ6" target="_blank">
+        Get the Tax Deed Bible
+      </a>
+
+    </div>
+
+  </div>
+</section>
+    </div>
+  </div>
+</section><section class="class-section">
+  <h2>Upcoming Tax Deed Classes</h2>
+
+  <div class="class-card">
+    <h3>Beginner Tax Deed Class</h3>
+    <p><strong>Date:</strong> April 15, 2026</p>
+    <p><strong>Time:</strong> 7:00 PM EST</p>
+    <p>Learn how to research, bid, and profit from tax deed auctions.</p>
+<a href="https://paypal.me/SidneyJackson85" target="_blank">
+  Donate / Pay for Class
+</a>
+    <a class="btn btn-primary" href="mailto:taxdeedphilosopher@gmail.com?subject=Class Registration&body=I want to register for the April 15 class">
+      Reserve Spot
     </a>
   </div>
 
-  <div class="section">
-
-    <div class="card">
-      <h2>Fast Local Delivery</h2>
-
-      <p>
-        Furniture, Facebook Marketplace pickups,
-        apartment moves, boxes, electronics,
-        and personal belongings delivered across Brooklyn.
-      </p>
-    </div>
-
-    <div class="card">
-      <h2>Pricing</h2>
-
-      <p class="pricing">
-        10 Minutes Load Included
-      </p>
-
-      <p class="pricing">
-        10 Minutes Unload Included
-      </p>
-
-      <p class="pricing">
-        $30 Every Extra 15 Minutes
-      </p>
-    </div>
-
-    <div class="card">
-      <h2>Rules</h2>
-
-      <ul>
-        <li>Items must be curbside and ready.</li>
-        <li>Customer must be present at dropoff.</li>
-        <li>Extra wait time billed every 15 minutes.</li>
-      </ul>
-    </div>
-
-    <div class="card">
-      <h2>Contact</h2>
-
-      <p>
-        curb2curbnwilliamsburg@gmail.com
-      </p>
-    </div>
-
+  <div class="class-card">
+    <h3>Advanced Title Search Training</h3>
+    <p><strong>Date:</strong> April 22, 2026</p>
+    <p><strong>Time:</strong> 7:00 PM EST</p>
+    <p>Deep dive into liens, title research, and risk analysis.</p>
+<a href="https://paypal.me/SidneyJackson85" target="_blank">
+  Donate / Pay for Class
+</a>
+    <a class="btn btn-primary" href="mailto:taxdeedphilosopher@gmail.com?subject=Advanced Class Registration">
+      Reserve Spot
+    </a>
   </div>
 
-  <footer>
-    CURB 2 CURB Williamsburg © 2026
+</section>
+  <section class="section">
+    <div class="container">
+      <h2>What You’ll Learn</h2>
+      <p class="section-intro">
+        This site is built for people who want to approach tax deed investing with discipline,
+        strategy, and real-world preparation.
+      </p>
+<section>
+  <h2>Who This Is For</h2>
+  <ul>
+    <li>✔ Beginners who want to avoid costly mistakes</li>
+    <li>✔ Investors looking for real tax deed strategies</li>
+    <li>✔ People serious about building wealth through auctions</li>
+  </ul>
+</section>
+      <div class="cards">
+        <div class="card">
+          <h3>Research</h3>
+          <p>Learn how to review properties before auction and avoid bad deals before you bid.</p>
+        </div>
+
+        <div class="card">
+          <h3>Title Awareness</h3>
+          <p>Spot hidden risks like liens, ownership problems, and legal issues that can cost you money.</p>
+        </div>
+
+        <div class="card">
+          <h3>Bidding Strategy</h3>
+          <p>Build a smarter bidding plan, control your risk, and stay disciplined at auction.</p>
+        </div>
+
+        <div class="card">
+          <h3>Profit Focus</h3>
+          <p>Move with a clear plan for holding, flipping, renting, or reselling tax deed properties.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-dark">
+    <div class="container">
+      <h2>About The Brand</h2>
+      <div class="about-box">
+        <p>
+          <strong>Sidney W. Jackson III — The Tax Deed Philosopher</strong><br><br>
+          This brand is built to help serious learners understand tax deed investing in a practical,
+          focused, and strategic way. No fluff. No noise. Just clear guidance for people who want to
+          move smarter.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section cta">
+    <div class="container">
+      <h2>Start Your Tax Deed Journey Today</h2>
+      <p>
+        Download your free checklist, begin building your knowledge, and take the first step toward
+        smarter tax deed investing.
+      </p>
+      <a class="btn btn-primary" href="https://docs.google.com/forms/d/e/1FAIpQLScrDSH2ykErrdoEDIRbCwv3Gq1aYO6oKJz-lWrCmcETGjr8Tg/viewform?usp=publish-editor" target="_blank">Download Free Checklist</a>
+    </div>
+  </section>
+
+  <footer class="footer">
+    © 2026 Sidney W. Jackson III • Tax Deed Philosopher
   </footer>
 
 </body>
